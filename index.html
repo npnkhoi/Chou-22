@@ -8,39 +8,41 @@
     <title>Chou 22</title>
 </head>
 <body>
-    <div class="container">
-        <p class='title'>This website is dedicated to celebrate Chou's 22nd birthday.</p>
-        <br>
-        <div class="flex">
-            <div class="music" style="width: 60%;">
-                <iframe width="100%" height="92.8%" src="https://www.youtube.com/embed/gQOFI4ATIOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p>Play the song</p>
+    <div class="card-container">
+        <div class="card">
+            <p class='title'>This website is dedicated to celebrate Chou's 22nd birthday.</p>
+            <br>
+            <div class="flex">
+                <div class="music" style="width: 60%;">
+                    <iframe width="100%" height="92.8%" src="https://www.youtube.com/embed/gQOFI4ATIOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Play the song</p>
+                </div>
+                <div class="portrait" style="width: 40%;">
+                    <img src="portrait.jpg" alt="Chau with a sunny smile">
+                    <p>Wish the girl an awesome new age!</p>
+                </div>
+                
             </div>
-            <div class="portrait" style="width: 40%;">
-                <img src="portrait.jpg" alt="Chau with a sunny smile">
-                <p>Wish the girl an awesome new age!</p>
-            </div>
-            
-        </div>
-    
-        <br>
         
-        <div class="flex">
-            <h3 class="wish">
-                Dear Chou,
-                <br>
-                You are a huge source of cheerfulness, cuteness and intelltual curiosity to me these days.
-                You introduce me Swing dance, TS Ngu Ngu, Ta Nang Ta Nung and other good tastes of life.
-                <br>
-                Going into your 22nd year, I wish you:
-                <li>Intelligence other than cuteness (you choose this) </li>
-                <li>Chillies other than panick</li>
-                <li>Happiness other than sorrow</li>
-                <li>Finish orientation mission and Sci Inq project by this time next week!</li>
-                You are great enough to shine anywhere you go. 
-                <br>
-                Happy birthday!
-            </h3>
+            <br>
+            
+            <div class="flex">
+                <h3 class="wish">
+                    Dear Chou,
+                    <br>
+                    You are a huge source of cheerfulness, cuteness and intelltual curiosity to me these days.
+                    You introduce me Swing dance, TS Ngu Ngu, Ta Nang Ta Nung and other good tastes of life.
+                    <br>
+                    Going into your 22nd year, I wish you:
+                    <li>Intelligence other than cuteness (you choose this) </li>
+                    <li>Chillies other than panick</li>
+                    <li>Happiness other than sorrow</li>
+                    <li>Finish orientation mission and Sci Inq project by this time next week!</li>
+                    You are great enough to shine anywhere you go. 
+                    <br>
+                    Happy birthday!
+                </h3>
+            </div>
         </div>
     </div>
 </body>
@@ -57,7 +59,10 @@
 
     @tailwind utilities;
 
-    .container {
+    .card-container {
+        margin: 0 20px;
+    }
+    .card {
         width: 100%;
         max-width: 800px;
         text-align: center;
@@ -74,14 +79,14 @@
 
     .wish {
         text-align: left;
-        margin: 0 50px;
+        margin: 0 5%;
         font-style: italic;
     }
 
     .watermark {
         position: absolute;
         right: 0px;
-        padding: 5px;
+        padding: 20px;
     }
 
 </style>
